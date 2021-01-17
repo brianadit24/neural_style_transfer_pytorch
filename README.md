@@ -1,4 +1,4 @@
-# Neural Style Transfer with Pytorch
+# Neural Style Transfer with PyTorch
 Build a Neural Network of Artistic Style with PyTorch.
 Backbone VGG-16.
 
