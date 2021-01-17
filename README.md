@@ -1,5 +1,6 @@
 # Neural Style Transfer with Pytorch
-Build a Neural Network of Artistic Style with PyTorch
+Build a Neural Network of Artistic Style with PyTorch.
+Backbone VGG-16.
 
 Referensi:
 - [Neural Algorithm of Artistic Style](https://arxiv.org/pdf/1508.06576.pdf), Gatys et al.
