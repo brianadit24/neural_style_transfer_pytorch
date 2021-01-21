@@ -31,3 +31,10 @@ def draw_styled_image(output):
     plt.axis("off")
     plt.pause(0.01)
     return styled_image
+
+def to_img(output):
+    styled_image = output[0].permute(1, 2, 0).cpu().detach() # Format untuk permute H x W x C pada Indexnya
+    styled_image = styled_image * std + mean # Denormalization
+    styled_image = styled_image.permute(2, 0, 1).unsqueeze(0) # Kembalikan ke C x H x W lalu kita beri N
+    styled_image.clamp_(0, 1)
+    return styled_image
